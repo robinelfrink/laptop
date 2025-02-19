@@ -79,17 +79,20 @@
     audacity
     direnv
     ecryptfs
-    gimp
+    gimp-with-plugins
     git
     gnomeExtensions.dash-to-dock
+    gnome.gnome-disk-utility
     gnucash
     go
     google-chrome
-    inkscape
+    gparted
+    inkscape-with-extensions
     libreoffice
     musescore
     networkmanager-openconnect
     nextcloud-client
+    ps2edit
     python3
     signal-desktop
     slack
