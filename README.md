@@ -1,4 +1,4 @@
-new empty root partition mounted on `/mnt`
+new empty root partition mounted on `/mnt`, see https://nixos.wiki/wiki/Btrfs
 
 `sudo nixos-generate-config --root /mnt`
 
