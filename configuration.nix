@@ -1,15 +1,27 @@
 { config, pkgs, ... }:
 
 {
-  imports =
+  imports = 
     [
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
+  # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelModules = ["ecryptfs"];
+  boot.kernelModules = [ "ecryptfs" ];
+
+  # Filesystem options
+  fileSystems = {
+    "/".options = [ "compress=zstd" ];
+    "/home".options = [ "compress=zstd" ];
+    "/nix".options = [ "compress=zstd" "noatime" ];
+  }
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+    fileSystems = [ "/" ];
+  };
 
   # Encryption
   security.pam.enableEcryptfs = true;
@@ -20,7 +32,6 @@
 
   # Localization
   i18n.defaultLocale = "en_US.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "nl_NL.UTF-8";
     LC_IDENTIFICATION = "nl_NL.UTF-8";
@@ -32,6 +43,7 @@
     LC_TELEPHONE = "nl_NL.UTF-8";
     LC_TIME = "nl_NL.UTF-8";
   };
+  time.timeZone = "Europe/Amsterdam";
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -82,7 +94,7 @@
     gimp-with-plugins
     git
     gnomeExtensions.dash-to-dock
-    gnome.gnome-disk-utility
+    gnome-disk-utility
     gnucash
     go
     google-chrome
@@ -92,7 +104,6 @@
     musescore
     networkmanager-openconnect
     nextcloud-client
-    ps2edit
     python3
     signal-desktop
     slack
@@ -113,5 +124,4 @@
   };
 
   system.stateVersion = "24.11";
-
 }
