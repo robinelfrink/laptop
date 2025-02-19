@@ -72,8 +72,14 @@
     hashedPassword = "$6$1ibk.hBqsHrevy5x$naYYCBfe8Y9rCOFRga/L8dfZbJHoTkWhsQ1ol0KzfG91vY8RTBXJrrFo.TDXbZtjtIVFnblawSeu6bvKGmcmb/";
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
+  virtualisation.containers.enable = true;
+  virtualisation = {
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
