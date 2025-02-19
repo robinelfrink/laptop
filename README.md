@@ -1,4 +1,4 @@
-root mounted on `/mnt`
+new empty root partition mounted on `/mnt`
 
 `sudo nixos-generate-config --root /mnt`
 
