@@ -81,6 +81,7 @@
     ecryptfs
     gimp
     git
+    gnomeExtensions.dash-to-dock
     gnucash
     go
     google-chrome
