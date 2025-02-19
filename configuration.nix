@@ -84,19 +84,19 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # Install packages
   environment.systemPackages = with pkgs; [
-    vim
-    git
     ecryptfs
-    wget
-    google-chrome
-    virtualbox
     gimp
+    git
+    google-chrome
     inkscape
+    nextcloud-client
     p7zip
     tmux
+    vim
+    virtualbox
+    wget
   ];
 
   system.stateVersion = "24.11";
