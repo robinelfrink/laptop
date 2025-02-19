@@ -61,17 +61,6 @@
     #jack.enable = true;
   };
 
-  # This is me.
-  users.users.robin = {
-    isNormalUser = true;
-    description = "Robin Elfrink";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
-    hashedPassword = "$6$1ibk.hBqsHrevy5x$naYYCBfe8Y9rCOFRga/L8dfZbJHoTkWhsQ1ol0KzfG91vY8RTBXJrrFo.TDXbZtjtIVFnblawSeu6bvKGmcmb/";
-  };
-
   virtualisation.containers.enable = true;
   virtualisation = {
     podman = {
@@ -86,18 +75,38 @@
 
   # Install packages
   environment.systemPackages = with pkgs; [
+    appimage-run
+    audacity
+    direnv
     ecryptfs
     gimp
     git
+    gnucash
+    go
     google-chrome
     inkscape
+    libreoffice
+    musescore
+    networkmanager-openconnect
     nextcloud-client
-    p7zip
+    python3
+    signal-desktop
+    slack
     tmux
     vim
     virtualbox
+    vscode
     wget
+    whatsapp-for-linux
   ];
+
+  # This is me.
+  users.users.robin = {
+    isNormalUser = true;
+    description = "Robin Elfrink";
+    extraGroups = [ "networkmanager" "wheel" ];
+    hashedPassword = "$6$1ibk.hBqsHrevy5x$naYYCBfe8Y9rCOFRga/L8dfZbJHoTkWhsQ1ol0KzfG91vY8RTBXJrrFo.TDXbZtjtIVFnblawSeu6bvKGmcmb/";
+  };
 
   system.stateVersion = "24.11";
 
