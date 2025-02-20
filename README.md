@@ -16,7 +16,7 @@ mount /dev/nvme0n1p1 /mnt/boot
 ```
 
 ```
-nixos-generate-config --root /mnt`
+nixos-generate-config --root /mnt
 curl -o /mnt/nixos/configuration.nix https://raw.githubusercontent.com/robinelfrink/nix/refs/heads/main/configuration.nix
 nixos-install
 ```
