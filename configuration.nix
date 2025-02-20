@@ -91,6 +91,7 @@
     audacity
     direnv
     ecryptfs
+    evolution
     gimp-with-plugins
     git
     gnomeExtensions.dash-to-dock
