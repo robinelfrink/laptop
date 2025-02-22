@@ -7,7 +7,7 @@ Downloads:
 Apt packages:
 
 ```
-sudo apt-get install audacity direnv git gnucash nextcloud-desktop podman-docker vim
+sudo apt-get install audacity direnv gcc git gnucash make nextcloud-desktop perl podman-docker vim
 ```
 
 Configuration:
@@ -29,4 +29,14 @@ Configuration:
   
    ```
    sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 robin
+   ```
+
+*  Virtualbox
+
+   ```
+   sudo apt-get install --fix-broken
+   sudo usermod --append --groups vboxusers robin
+   openssl req -new -x509 -newkey rsa:2048 -keyout MOK.key -out MOK.crt -nodes -days 3650 -subj "/CN=Zaphod/"
+   openssl x509 -in MOK.crt -out MOK.cer -outform DER
+   sudo mokutil --import MOK.cer
    ```
