@@ -12,10 +12,21 @@ sudo apt-get install audacity direnv git gnucash nextcloud-desktop podman-docker
 
 Configuration:
 
-*  Podman
-  
-   `sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 robin`
-
 *  Direnv
 
-   `echo -e "\neval \"\$(direnv hook bash)\"" >> .bashrc`
+   ```
+   echo -e "\neval \"\$(direnv hook bash)\"" >> .bashrc
+   ```
+
+*  Git
+
+   ```
+   git config --global user.name "Robin Elfrink"
+   git config --global user.email robin@15augustus.nl
+   ```
+
+*  Podman
+  
+   ```
+   sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 robin
+   ```
