@@ -7,7 +7,7 @@ Downloads:
 Apt packages:
 
 ```
-sudo apt-get install audacity direnv gcc git gnucash make nextcloud-desktop perl podman-docker vim
+sudo apt-get install audacity direnv git gnucash nextcloud-desktop podman-docker pwgen restic vim
 ```
 
 Configuration:
