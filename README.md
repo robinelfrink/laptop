@@ -20,7 +20,7 @@ sudo apt-get install audacity curl direnv git gnucash network-manager-openconnec
      network-manager-openvpn-gnome nextcloud-desktop podman-docker pwgen restic vim
 ```
 
-Configuration:
+# Configuration:
 
 *  Direnv
 
@@ -41,12 +41,8 @@ Configuration:
    sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 robin
    ```
 
-*  Virtualbox
+*  Nextcloud local folders
 
    ```
-   sudo apt-get install --fix-broken
-   sudo usermod --append --groups vboxusers robin
-   openssl req -new -x509 -newkey rsa:2048 -keyout MOK.key -out MOK.crt -nodes -days 3650 -subj "/CN=Zaphod/"
-   openssl x509 -in MOK.crt -out MOK.cer -outform DER
-   sudo mokutil --import MOK.cer
+   grep localPath .config/Nextcloud/nextcloud.cfg | sed 's/.*=//' | xargs -0 -i{} mkdir -p "{}"
    ```
