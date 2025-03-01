@@ -1,10 +1,3 @@
-# Remove snap
-
-```
-sudo dpkg --purge snapd firefox
-sudo rm -rf /root/snap
-```
-
 # Install software
 
 ## Downloads:
@@ -17,7 +10,7 @@ sudo rm -rf /root/snap
 ## Apt packages:
 
 ```
-sudo apt-get install audacity curl direnv git gnucash network-manager-openconnect-gnome \
+sudo apt-get install audacity curl direnv evolution git gnucash network-manager-openconnect-gnome \
      network-manager-openvpn-gnome nextcloud-desktop podman-docker pwgen restic vim
 ```
 
