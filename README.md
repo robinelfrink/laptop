@@ -10,6 +10,7 @@ sudo rm -rf /root/snap
 ## Downloads:
 
 *  [Google Chrome](https://www.google.com/chrome/)
+*  [Signal](https://signal.org/download/linux/)
 *  [Visual Studio Code](https://code.visualstudio.com/)
 *  [Zoom](https://zoom.us/download?os=linux)
 
