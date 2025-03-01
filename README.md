@@ -1,10 +1,27 @@
-Downloads:
+# Remove snap
+
+```
+snap remove lxd
+snap remove core20
+snap remove snapd
+apt autoremove --purge snapd
+apt-mark hold snapd
+rm -fr ~/snap
+rm -rf /var/cache/snapd
+rm -rf /snap
+rm -rf /var/snap
+rm -rf /var/lib/snapd
+```
+
+# Install software
+
+## Downloads:
 
 *  [Google Chrome](https://www.google.com/chrome/)
 *  [Visual Studio Code](https://code.visualstudio.com/)
 *  [Zoom](https://zoom.us/download?os=linux)
 
-Apt packages:
+## Apt packages:
 
 ```
 sudo apt-get install audacity curl direnv git gnucash nextcloud-desktop podman-docker pwgen restic vim
