@@ -2,7 +2,8 @@
 
 ## Downloads:
 
-*  [Google Chrome](https://www.google.com/chrome/)
+*  [Google Chrome](https://www.google.com/chrome)
+*  [MuseScore](https://musescore.org/en/download)
 
 ## App store:
 
@@ -11,7 +12,7 @@ Signal Desktop, Vistual Studio Code, Zoom Client
 ## Apt packages:
 
 ```
-sudo apt-get install audacity curl direnv evolution git gnucash musescore3 network-manager-openconnect-gnome \
+sudo apt-get install audacity curl direnv evolution git gnucash network-manager-openconnect-gnome \
      network-manager-openvpn-gnome nextcloud-desktop podman-docker pwgen restic vim
 ```
 
