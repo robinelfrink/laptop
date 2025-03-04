@@ -6,7 +6,7 @@
 
 ## App store:
 
-Signal Desktop, Vistual Studio Code, Zoom Client
+MuseScore, Signal Desktop, Vistual Studio Code, Zoom Client
 
 ## Apt packages:
 
