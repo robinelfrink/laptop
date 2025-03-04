@@ -16,6 +16,15 @@ sudo apt-get install audacity curl direnv evolution git gnucash network-manager-
 
 # Configuration:
 
+*  Btrfs compression
+
+   ```
+   sudo mount -o remount,compress=zstd /
+   sudo btrfs filesystem defrag -czstd -r /
+   sudo mount -o remount,compress=zstd /home
+   sudo btrfs filesystem defrag -czstd -r /home
+   ```
+
 *  Direnv
 
    ```
