@@ -38,5 +38,5 @@ sudo apt-get install audacity curl direnv evolution git gnucash network-manager-
 *  Nextcloud local folders
 
    ```
-   grep localPath .config/Nextcloud/nextcloud.cfg | sed 's/.*=//' | xargs -0 -i{} mkdir -p "{}"
+   grep localPath .config/Nextcloud/nextcloud.cfg | sed 's/.*=//' | xargs -i{} mkdir -p "{}"
    ```
