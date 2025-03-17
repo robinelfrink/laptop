@@ -47,6 +47,13 @@ sudo apt-get install audacity curl direnv evolution gimp git gnucash inkscape \
    sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 robin
    ```
 
+*  OpenVPN & AppArmor
+
+   Create `/etc/apparmor.d/local/openvpn`:
+   ```
+   @{HOME}/.cert/nm-openvpn/* r,
+   ```
+
 *  Nextcloud local folders
 
    ```
