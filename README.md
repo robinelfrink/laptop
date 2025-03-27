@@ -4,10 +4,11 @@
 
 *  [Google Chrome](https://www.google.com/chrome)
 *  [MuseScore](https://musescore.org/en/download)
+*  [Zoom](https://zoom.us/download?os=linux)
 
 ## App store:
 
-Signal Desktop, Vistual Studio Code, Zoom Client
+Signal Desktop, Vistual Studio Code
 
 ## Apt packages:
 
