@@ -20,6 +20,12 @@ sudo apt-get install audacity curl direnv evolution gimp git gnucash inkscape \
 
 # Configuration:
 
+*  Add language pack
+
+   ```
+   sudo apt-get install language-pack-gnome-nl
+   ```
+
 *  Btrfs compression
 
    ```
